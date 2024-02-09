@@ -3,10 +3,6 @@ Implemented a NMPC system to overtake the leading vehicle considering the constr
 
 # Car Dynamics
 
-<div>
-<img src="CarModel.png" width="1200">
-</div>
-
 We consider the car dynamics with lumped rear and front tire forces. 
 
 For simplification, we consider the positions and orientation in the world coordinates.  
@@ -17,5 +13,6 @@ For simplification, we consider the positions and orientation in the world coord
 \dot{r} & =\frac{a\left(F_{y_f} \cos \delta+F_{x_f} \sin \delta\right)-b F_{y_r}}{I_{z z}} \\
 \dot{x} & = \cos(\phi)U_x - \sin(\phi)U_y  \\
 \dot{y} & = \sin(\phi)U_x + \sin(\phi)U_y   \\ 
-\dot{\phi} & =r  . \\
+\dot{\phi} & =r  
 \end{aligned}
+
