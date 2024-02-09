@@ -5,14 +5,5 @@ Implemented a NMPC system to overtake the leading vehicle considering the constr
 
 We consider the car dynamics with lumped rear and front tire forces. 
 
-For simplification, we consider the positions and orientation in the world coordinates.  
-
-\begin{aligned}
-\dot{U}_x & =\frac{F_{x_f} \cos \delta-F_{y_f} \sin \delta+F_{x_r}-F_d}{m}+r U_y \\
-\dot{U}_y & =\frac{F_{y_f} \cos \delta+F_{x_f} \sin \delta+F_{y_r}+F_b}{m}-r U_x \\
-\dot{r} & =\frac{a\left(F_{y_f} \cos \delta+F_{x_f} \sin \delta\right)-b F_{y_r}}{I_{z z}} \\
-\dot{x} & = \cos(\phi)U_x - \sin(\phi)U_y  \\
-\dot{y} & = \sin(\phi)U_x + \sin(\phi)U_y   \\ 
-\dot{\phi} & =r  
-\end{aligned}
+![image](https://github.com/srushtihippargi/MPC-Drag-Racing/assets/146058344/26e69d37-f938-4062-b04d-441ab3cf4079)
 
